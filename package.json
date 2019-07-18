@@ -1,0 +1,33 @@
+{
+  "name": "axur-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matheusmelchiades/axur-challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matheusmelchiades/axur-challenge/issues"
+  },
+  "homepage": "https://github.com/matheusmelchiades/axur-challenge#readme",
+  "dependencies": {
+    "bunyan": "^1.8.12",
+    "chalk": "^2.4.2",
+    "good": "^8.1.2",
+    "good-console": "^8.0.0",
+    "good-squeeze": "^5.1.0",
+    "hapi": "^18.1.0",
+    "hapi-routes": "^5.0.2",
+    "rotating-file-stream": "^1.4.2"
+  },
+  "devDependencies": {
+    "eslint": "^6.0.1"
+  }
+}
