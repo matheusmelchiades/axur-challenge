@@ -25,7 +25,14 @@ module.exports = {
                     'stream': process.stdout,
                     'level': 'debug'
                 },
-
+                {
+                    'type': 'rotating-file',
+                    'period': '1d',
+                    'count': 365,
+                    // 'path': `${LOG_FOLDER}/core.${process.pid}.log`,
+                    'path': `${LOG_FOLDER}/core.log`,
+                    'level': bunyan.DEBUG
+                }
             ]
         }
     }

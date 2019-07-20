@@ -14,7 +14,7 @@ const getPlugins = () => {
     plugins.push({
         plugin: hapiRoutes,
         options: {
-            dir: `${__dirname}/../app/api/**.routes.js`,
+            dir: `${__dirname}/../app/api/**/**.routes.js`,
         },
     });
 

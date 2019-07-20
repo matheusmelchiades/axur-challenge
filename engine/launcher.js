@@ -1,6 +1,7 @@
 const Hapi = require('hapi');
 const config = require('../config/ecosystem.config');
 const loadPlugins = require('./loadPluggins');
+const scheduler = require('./scheduler');
 const logger = require('./logger');
 
 
@@ -32,6 +33,8 @@ module.exports.start = async () => {
         await server.start();
 
         logger.info(`Server running at: ${server.info.uri}`);
+
+        await scheduler.load();
 
     } catch (err) {
         logger.error(`Error in start server: ${err.message}`);
