@@ -37,6 +37,7 @@ module.exports.start = async () => {
         await scheduler.load();
 
     } catch (err) {
+        console.log(err.message);
         logger.error(`Error in start server: ${err.message}`);
     }
 

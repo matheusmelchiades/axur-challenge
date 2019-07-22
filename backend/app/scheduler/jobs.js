@@ -1,12 +1,25 @@
 const http = require('../../helper/http-client');
 const logger = require('../../engine/logger');
-const integrationsConfig = require('../../config/ecosystem.config').integrations;
 const handlerListContacts = require('../api/contacts/contacts.dao');
+const modelContact = require('../api/contacts/contacts.model');
+const integrationsConfig = require('../../config/ecosystem.config').integrations;
+const integrationsData = require('../../helper/handlerIntegrationsData');
 
 const startHubspot = async () => {
-    // const list = await handlerListContacts.createLitsContacts();
+    let hubspotList = integrationsData.getInfoData('hubspot', 'listData');
 
-    // console.log(list.name)
+    if (hubspotList && hubspotList.id)
+        return logger.info(`### LIST CONTACTS ALREADY CREATED: ${hubspotList.id} ###`);
+
+    const list = await handlerListContacts.createLitsContacts();
+
+    const contacts = await modelContact.restoreData();
+
+    await modelContact.associateContactToList(list, contacts);
+
+    integrationsData.setInfoData('hubspot', {
+        'listData': list
+    });
 };
 
 const startIntegration = (apis) => {

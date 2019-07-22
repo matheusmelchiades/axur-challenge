@@ -11,10 +11,11 @@ const logSqueezeArgs = [{
 const getPlugins = () => {
     let plugins = [];
 
+    // ROUTES
     plugins.push({
-        plugin: hapiRoutes,
-        options: {
-            dir: `${__dirname}/../app/api/**/**.routes.js`,
+        'plugin': hapiRoutes,
+        'options': {
+            'dir': `${__dirname}/../app/api/**/**.routes.js`,
         },
     });
 

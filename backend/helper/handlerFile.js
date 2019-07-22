@@ -15,7 +15,6 @@ module.exports.convertCsvToJson = (url, separator = ',') => {
     }
 };
 
-
 const factoryBySample = (sample, content) => {
     let object = {};
 
