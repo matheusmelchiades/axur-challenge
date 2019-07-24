@@ -49,7 +49,7 @@ module.exports.checkStatusApi = (integrations) => {
                     resolve({ ...api, status: 'SUCCESS' });
                 })
                 .catch(() => {
-                    logger.error(`### API "${api.name}" IS NOT RUNNIG ###`);
+                    logger.error(`### API "${api.name}" IS NOT RUNNING ###`);
                     resolve({ ...api, status: 'ERROR' });
                 });
         });

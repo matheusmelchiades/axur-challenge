@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
-import palette from '../../config/palette';
+import { palette } from '../../config/GlobalStyle';
 import {
   Toolbar, makeStyles, Typography,
-  Tabs, Tab,
+  Tabs, Tab, Icon, IconButton
 } from '@material-ui/core';
+import { Search } from '@material-ui/icons'
 import LogoImg from '../../assets/logo.png'
 
 const Header = () => {
@@ -21,21 +22,30 @@ const Header = () => {
         </Typography>
       </div>
 
-      <Tabs value={indexTab}
-        onChange={(_, value) => setIndexTab(value)}>
-        {
-          menus.map((menu, index) => (
-            <Tab className={classes.tab} key={index} label={menu} />
-          ))
-        }
-      </Tabs>
+      <div className={classes.setRowDirections}>
+        <Tabs className={classes.tabs} value={indexTab}
+          onChange={(_, value) => setIndexTab(value)}>
+          {
+            menus.map((menu, index) => (
+              <Tab className={classes.tab} key={index} label={menu} />
+            ))
+          }
+        </Tabs>
 
+        <IconButton>
+          <Search />
+        </IconButton>
+      </div>
 
     </Toolbar>
   );
 };
 
 const useStyles = makeStyles(theme => ({
+  setRowDirections: {
+    display: 'flex',
+    flexDirection: 'row',
+  },
   toolBar: {
     display: 'flex',
     flexDirection: 'row',
@@ -60,6 +70,9 @@ const useStyles = makeStyles(theme => ({
     fontSize: 32,
     color: 'whitesmoke',
     alignSelf: 'center',
+  },
+  tabs: {
+    marginRight: 100
   },
   tab: {
     color: 'whitesmoke',

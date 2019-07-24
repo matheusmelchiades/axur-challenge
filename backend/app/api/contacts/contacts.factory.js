@@ -11,7 +11,7 @@ module.exports.createAContact = (contact) => {
             },
             {
                 'property': 'email',
-                'value': new Date().getTime().toString() + contact.email
+                'value': new Date().getTime().toString().slice(0, 2) + contact.email
             },
             {
                 'property': 'gender',

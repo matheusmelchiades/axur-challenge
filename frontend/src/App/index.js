@@ -1,70 +1,29 @@
 import React from 'react';
-import palette from '../config/palette';
+import GlobalStyle from '../config/GlobalStyle';
 import Header from '../components/Header';
+import Contacts from '../pages/Contacts/index';
 import {
-  CssBaseline, makeStyles, Container, Card,
-  Grid, CardContent, CardActions, IconButton,
+  CssBaseline, makeStyles, MuiThemeProvider,
 } from '@material-ui/core';
-import {
-  Call, Email, Forum as Chat, MoreHoriz
-} from '@material-ui/icons';
-
 
 const App = () => {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <MuiThemeProvider theme={GlobalStyle}>
       <CssBaseline />
-      <Header />
-      <Container>
-        <Grid container spacing={4}>
-          {
-            Array(12).fill({ name: 'test' }).map((card, index) => (
-              <Grid key={index} item xs={3}>
-                <Card className={classes.card}>
-                  <CardActions >
-                    <IconButton>
-                      <MoreHoriz />
-                    </IconButton>
-                  </CardActions>
-
-                  <CardContent >
-                    {card.name}
-                  </CardContent>
-
-
-                  <CardActions>
-                    <IconButton>
-                      <Call />
-                    </IconButton>
-                    <IconButton>
-                      <Email />
-                    </IconButton>
-                    <IconButton>
-                      <Chat />
-                    </IconButton>
-                  </CardActions>
-                </Card>
-              </Grid>
-            ))
-          }
-        </Grid>
-      </Container>
-    </div>
+      <div className={classes.root}>
+        <Header />
+        <Contacts />
+      </div>
+    </MuiThemeProvider>
   );
 }
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles(theme => ({
   root: {
-    background: palette.colors.purpleDark,
-    height: '100vh',
-  },
-
-  card: {
-    backgroundColor: palette.colors.purple
+    // background: palette.colors.purpleDark,
   }
-
 }))
 
 export default App;
