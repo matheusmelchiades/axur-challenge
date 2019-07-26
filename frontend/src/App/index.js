@@ -1,10 +1,13 @@
 import React from 'react';
 import GlobalStyle from '../config/GlobalStyle';
-import Header from '../components/Header';
-import Contacts from '../pages/Contacts/index';
 import {
   CssBaseline, makeStyles, MuiThemeProvider,
 } from '@material-ui/core';
+import { Route, Redirect } from 'react-router-dom';
+
+import Header from '../components/Header';
+import Contacts from '../pages/Contacts/index';
+import Chat from '../pages/Chat';
 
 const App = () => {
   const classes = useStyles();
@@ -14,15 +17,19 @@ const App = () => {
       <CssBaseline />
       <div className={classes.root}>
         <Header />
-        <Contacts />
+        <Route path="/contacts" component={Contacts} />
+        <Route path="/messages" component={Chat} />
+        <Redirect from="*" to="home" />
       </div>
     </MuiThemeProvider>
   );
 }
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles(() => ({
   root: {
-    // background: palette.colors.purpleDark,
+    padding: '1%',
+    paddingLeft: '3%',
+    paddingRight: '3%'
   }
 }))
 

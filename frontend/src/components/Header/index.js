@@ -1,20 +1,30 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { palette } from '../../config/GlobalStyle';
 import {
-  Toolbar, makeStyles, Typography,
-  Tabs, Tab, Icon, IconButton
+  makeStyles, Typography,
+  Tabs, Tab, IconButton,
 } from '@material-ui/core';
-import { Search } from '@material-ui/icons'
-import LogoImg from '../../assets/logo.png'
+import { Search, NotificationsOutlined } from '@material-ui/icons'
+import { withRouter } from 'react-router-dom';
 
-const Header = () => {
-  const [menus] = useState(['HOME', 'CHAT', 'CONTACTS', 'SETTINGS'])
+import LogoImg from '../../assets/logo.png'
+import menusDB from '../../storage/menus.json'
+
+const Header = ({ history }) => {
+  const [menus] = useState(menusDB)
   const [indexTab, setIndexTab] = useState(2)
   const classes = useStyles();
 
+  useEffect(() => {
+    const currentPath = history.location.pathname;
+    const indexMenu = menus.findIndex(menu => menu.path === currentPath);
+
+    setIndexTab(indexMenu);
+  })
+
   return (
-    <Toolbar className={classes.toolBar} >
-      <div className={classes.logoContainer}>
+    <div className={`${classes.setRowDirection} ${classes.toolBar}`} >
+      <div className={`${classes.setRowDirection} ${classes.logoContainer}`}>
         <img className={classes.LogoImg} src={LogoImg} alt="logo" />
 
         <Typography className={classes.logoTitle} classvariant="h2" noWrap>
@@ -22,12 +32,13 @@ const Header = () => {
         </Typography>
       </div>
 
-      <div className={classes.setRowDirections}>
-        <Tabs className={classes.tabs} value={indexTab}
+      <div className={classes.setRowDirection}>
+        <Tabs value={indexTab}
           onChange={(_, value) => setIndexTab(value)}>
           {
             menus.map((menu, index) => (
-              <Tab className={classes.tab} key={index} label={menu} />
+              <Tab disableRipple className={classes.tab} key={index} label={menu.label || ''}
+                onClick={() => history.push(menu.path)} />
             ))
           }
         </Tabs>
@@ -35,31 +46,28 @@ const Header = () => {
         <IconButton>
           <Search />
         </IconButton>
-      </div>
 
-    </Toolbar>
+        <IconButton>
+          <NotificationsOutlined />
+        </IconButton>
+      </div>
+    </div>
   );
 };
 
 const useStyles = makeStyles(theme => ({
-  setRowDirections: {
+  setRowDirection: {
     display: 'flex',
     flexDirection: 'row',
   },
   toolBar: {
-    display: 'flex',
-    flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
     backgroundColor: palette.colors.purpleDark,
-    padding: 0,
-    paddingLeft: '2%',
   },
   logoContainer: {
-    display: 'flex',
-    flexDirection: 'row',
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   logoImg: {
     height: 'auto',
@@ -71,9 +79,6 @@ const useStyles = makeStyles(theme => ({
     color: 'whitesmoke',
     alignSelf: 'center',
   },
-  tabs: {
-    marginRight: 100
-  },
   tab: {
     color: 'whitesmoke',
     fontWeight: 'bold',
@@ -81,4 +86,4 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default Header;
+export default withRouter(Header);

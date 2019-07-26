@@ -10,7 +10,6 @@ import {
 import { vinculateDataByIndex } from '../../helper/data';
 import mediaData from '../../storage/media.json';
 import api from '../../services/api';
-import { type } from 'os';
 
 const Contacts = () => {
   const [data, setData] = useState([]);
@@ -18,14 +17,14 @@ const Contacts = () => {
 
   useEffect(() => {
     async function fetchData() {
+
       const response = await api.get('contacts');
 
-      if (!response.data.length) return;
+      if (response.data.length) {
+        const vinculated = vinculateDataByIndex(response.data, mediaData);
 
-      const vinculated = vinculateDataByIndex(response.data, mediaData)
-
-      setData(vinculated)
-
+        setData(vinculated);
+      }
     }
 
     fetchData();
@@ -47,7 +46,7 @@ const Contacts = () => {
 
                 <CardContent className={classes.cardContent}>
                   <Avatar className={classes.cardAvatar}
-                    src={contact.image.urlLarge || ''} />
+                    src={contact.image ? contact.image.urlLarge : ''} />
 
                   <Typography className={classes.name} variant="h6">
                     {contact.firstname} {contact.lastname}
@@ -61,13 +60,13 @@ const Contacts = () => {
                 <Divider className={classes.divider} />
 
                 <div className={classes.contentActions}>
-                  <IconButton>
+                  <IconButton className={classes.icons}>
                     <Call className={classes.colorCard} />
                   </IconButton>
-                  <IconButton>
+                  <IconButton className={classes.icons}>
                     <Email className={classes.colorCard} />
                   </IconButton>
-                  <IconButton>
+                  <IconButton className={classes.icons}>
                     <Chat className={classes.colorCard} />
                   </IconButton>
                 </div>
@@ -84,7 +83,6 @@ const Contacts = () => {
 const useStyles = makeStyles(theme => ({
   root: {
     marginTop: '3%'
-    // background: palette.colors.purpleDark,
   },
 
   card: {
@@ -124,6 +122,9 @@ const useStyles = makeStyles(theme => ({
   },
   colorCard: {
     color: '#f57c00',
+  },
+  icons: {
+    margin: '5%'
   }
 }))
 
