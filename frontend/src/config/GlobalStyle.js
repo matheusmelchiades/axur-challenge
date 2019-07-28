@@ -27,6 +27,6 @@ export const palette = {
     'orange': '#dc653b',
 
     'black': '#171130',
-    'greenSmoke': '#7e8b80',
+    'greenSmoke': '#00b686',
   }
 }

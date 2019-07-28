@@ -1,10 +1,18 @@
 [
   {
+    "label": "HOME",
+    "path": "/home"
+  },
+  {
     "label": "MESSAGES",
     "path": "/messages"
   },
   {
     "label": "CONTACTS",
     "path": "/contacts"
+  },
+  {
+    "label": "SETTINGS",
+    "path": "/settings"
   }
 ]

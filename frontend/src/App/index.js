@@ -19,7 +19,7 @@ const App = () => {
         <Header />
         <Route path="/contacts" component={Contacts} />
         <Route path="/messages" component={Chat} />
-        <Redirect from="*" to="home" />
+        <Redirect from="*" to="messages" />
       </div>
     </MuiThemeProvider>
   );

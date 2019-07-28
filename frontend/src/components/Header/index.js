@@ -4,7 +4,7 @@ import {
   makeStyles, Typography,
   Tabs, Tab, IconButton,
 } from '@material-ui/core';
-import { Search, NotificationsOutlined } from '@material-ui/icons'
+import { NotificationsOutlined } from '@material-ui/icons'
 import { withRouter } from 'react-router-dom';
 
 import LogoImg from '../../assets/logo.png'
@@ -42,10 +42,6 @@ const Header = ({ history }) => {
             ))
           }
         </Tabs>
-
-        <IconButton>
-          <Search />
-        </IconButton>
 
         <IconButton>
           <NotificationsOutlined />
