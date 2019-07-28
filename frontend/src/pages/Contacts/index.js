@@ -7,11 +7,10 @@ import {
 import {
   Call, Email, Forum as Chat, MoreHoriz,
 } from '@material-ui/icons';
-import { vinculateDataByIndex } from '../../helper/data';
-import mediaData from '../../storage/media.json';
+import { vinculateMedia } from '../../helper/data';
 import api from '../../services/api';
 
-const Contacts = () => {
+const Contacts = ({ history }) => {
   const [data, setData] = useState([]);
   const classes = useStyles();
 
@@ -21,7 +20,7 @@ const Contacts = () => {
       const response = await api.get('contacts');
 
       if (response.data.length) {
-        const vinculated = vinculateDataByIndex(response.data, mediaData);
+        const vinculated = vinculateMedia(response.data);
 
         setData(vinculated);
       }
@@ -46,7 +45,7 @@ const Contacts = () => {
 
                 <CardContent className={classes.cardContent}>
                   <Avatar className={classes.cardAvatar}
-                    src={contact.image ? contact.image.urlLarge : ''} />
+                    src={contact.avatar ? contact.avatar.urlLarge : ''} />
 
                   <Typography className={classes.name} variant="h6">
                     {contact.firstname} {contact.lastname}
@@ -66,7 +65,8 @@ const Contacts = () => {
                   <IconButton className={classes.icons}>
                     <Email className={classes.colorCard} />
                   </IconButton>
-                  <IconButton className={classes.icons}>
+                  <IconButton className={classes.icons}
+                    onClick={() => history.push('/messages', { contact })}>
                     <Chat className={classes.colorCard} />
                   </IconButton>
                 </div>

@@ -3,10 +3,13 @@ import {
   Paper, makeStyles, Avatar, Typography,
 } from '@material-ui/core';
 import { palette } from '../../config/GlobalStyle';
+import { vinculateDataByIndex } from '../../helper/data';
+import mediaData from '../../storage/media.json';
 import Input from '../../components/Inputs/SendMessage';
 import moment from 'moment';
 
-export default function Conversation({ data, contact }) {
+
+export default function Conversation({ data = {} }) {
   const [messages, setMessages] = useState([]);
   const classes = useStyle();
 
@@ -34,7 +37,7 @@ export default function Conversation({ data, contact }) {
               <div className={classes.avatarContent}>
                 {
                   !message.owner &&
-                  <Avatar className={classes.avatar} src={contact.avatar.urlMedium} />
+                  <Avatar className={classes.avatar} src={data.avatar.urlMedium} />
                 }
                 {
                   !message.owner &&

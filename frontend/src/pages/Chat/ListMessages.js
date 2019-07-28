@@ -15,14 +15,10 @@ export default function ListMessages({ data = [], onSelect }) {
       onSelect(selected)
   }
 
-  const orderByTime = (prev, next) => {
-    return new Date(next.time) - new Date(prev.time)
-  }
-
   return (
     <Paper className={classes.root} elevation={4}>
       {
-        data.sort(orderByTime).map((message, index) => {
+        data.map((message, index) => {
           const classSelect = message.selected ? classes.selected : '';
 
           return (
@@ -36,7 +32,7 @@ export default function ListMessages({ data = [], onSelect }) {
                 <div className={classes.contentData}>
                   <div className={classes.contentName} >
                     <Typography variant="h5" component="h2">
-                      {message.name}
+                      {message.firstname} {message.lastname}
                     </Typography>
                   </div>
 

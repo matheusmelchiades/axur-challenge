@@ -1,8 +1,6 @@
 [
   {
     "id": "437aee0868fbbc10d6c18b6968cf9008a4bbbf65",
-    "contact_id": 12523224,
-    "name": "Murdock Humerstone",
     "messages": [
       {
         "owner": false,
@@ -18,8 +16,6 @@
   },
   {
     "id": "619cdced6ac743992ba00138eb644aa7e72be3a0",
-    "contact_id": 12523225,
-    "name": "Griffie Fortman",
     "messages": [
       {
         "owner": false,
@@ -40,8 +36,6 @@
   },
   {
     "id": "a5d4b9e5ace24d3b70deaaab82d75f9badf5d5b2",
-    "contact_id": 12523274,
-    "name": "Yolanthe Keunemann",
     "messages": [
       {
         "owner": false,
@@ -112,8 +106,6 @@
   },
   {
     "id": "c2aa4e7687dfb7283dceec55e8aa139e99f8e027",
-    "contact_id": 12523324,
-    "name": "Carl Chasmer",
     "messages": [
       {
         "owner": false,
@@ -134,8 +126,6 @@
   },
   {
     "id": "a4ac360165a5a8acd42006232650c3eb1c1d8e83",
-    "contact_id": 12523374,
-    "name": "Tani Ashlin",
     "messages": [
       {
         "owner": false,
@@ -151,8 +141,6 @@
   },
   {
     "id": "a12c0437c03d69505e465494884e821d11d99554",
-    "contact_id": 12523375,
-    "name": "Boone Sucre",
     "messages": [
       {
         "owner": false,
@@ -173,8 +161,6 @@
   },
   {
     "id": "696ac3933048ffb1ef213665de2147d0f06ac6fb",
-    "contact_id": 12523376,
-    "name": "Izaak Ould",
     "messages": [
       {
         "owner": false,
@@ -190,8 +176,6 @@
   },
   {
     "id": "63ba6b60d359a526802faa4020009f624c99591a",
-    "contact_id": 12523424,
-    "name": "Emily Janko",
     "messages": [
       {
         "owner": false,
@@ -217,8 +201,6 @@
   },
   {
     "id": "68b612df4c36efcbc677fa6dd8077888750395de",
-    "contact_id": 12523474,
-    "name": "Dorena Savoury",
     "messages": [
       {
         "owner": false,
@@ -249,8 +231,6 @@
   },
   {
     "id": "831594b07d9adef7fcb19cab78839f16e9d64f68",
-    "contact_id": 12523524,
-    "name": "Sandy Walsh",
     "messages": [
       {
         "owner": false,
@@ -266,8 +246,6 @@
   },
   {
     "id": "dfa22c6a80c5f40524b648bbb8ce9a519d71d473",
-    "contact_id": 12523574,
-    "name": "Doyle Malster",
     "messages": [
       {
         "owner": false,
@@ -293,8 +271,6 @@
   },
   {
     "id": "9be9096bd4f375ff3c97925817cfe9b6fbc548d5",
-    "contact_id": 12523624,
-    "name": "Zachary Knutsen",
     "messages": [
       {
         "owner": false,
@@ -325,8 +301,6 @@
   },
   {
     "id": "6d5a0749a0e8d737c6738bd86160d5e3687fb508",
-    "contact_id": 12523674,
-    "name": "Jareb Marvin",
     "messages": [
       {
         "owner": false,
@@ -352,8 +326,6 @@
   },
   {
     "id": "05dbb5c0f8c32c2e5d80c31d9ec4df784cbfa189",
-    "contact_id": 12523724,
-    "name": "Elsi Grosier",
     "messages": [
       {
         "owner": false,
@@ -379,8 +351,6 @@
   },
   {
     "id": "dafa3b93951f9d526b55f12fb3a8f88f98f21e71",
-    "contact_id": 12523774,
-    "name": "Elyse McGeechan",
     "messages": [
       {
         "owner": false,
@@ -406,8 +376,6 @@
   },
   {
     "id": "7259decd22fe0e1efc3e072e62aa2fce1df2c935",
-    "contact_id": 12523775,
-    "name": "Sullivan Hidderley",
     "messages": [
       {
         "owner": false,
@@ -423,8 +391,6 @@
   },
   {
     "id": "8a2ebde2e0669e46b0d9e3bf7d5997ef63812617",
-    "contact_id": 12523776,
-    "name": "Gavin Perkinson",
     "messages": [
       {
         "owner": false,
@@ -450,8 +416,6 @@
   },
   {
     "id": "5478afdb6e1803b328f7aa4eace1b3318ec8121a",
-    "contact_id": 12523824,
-    "name": "Marabel Cardinale",
     "messages": [
       {
         "owner": false,
@@ -482,8 +446,6 @@
   },
   {
     "id": "543ddb90be1546f146e8be77f4cd76de45f2cefa",
-    "contact_id": 12523874,
-    "name": "Orton Nadin",
     "messages": [
       {
         "owner": false,
@@ -509,8 +471,6 @@
   },
   {
     "id": "e5c45e71af70cee3b0ec57731f68ef9681dbc089",
-    "contact_id": 12523924,
-    "name": "Maurizio Doud",
     "messages": [
       {
         "owner": false,
@@ -646,8 +606,6 @@
   },
   {
     "id": "13162bdb860138d55e83eb3c67bd5fa88c42f0e3",
-    "contact_id": 12523974,
-    "name": "Dolf Curtis",
     "messages": [
       {
         "owner": false,
@@ -673,8 +631,6 @@
   },
   {
     "id": "f05bec50523802124f2f9aeb29e0253b5b414147",
-    "contact_id": 12524024,
-    "name": "Blancha Boshier",
     "messages": [
       {
         "owner": false,
@@ -690,8 +646,6 @@
   },
   {
     "id": "25bc3e4e87e9e641bfb64c031cba2d5afc3840c5",
-    "contact_id": 12524025,
-    "name": "Maximilianus Dick",
     "messages": [
       {
         "owner": false,
@@ -752,8 +706,6 @@
   },
   {
     "id": "f2b92b136caa8ff9d35257ca241a7d50eb515088",
-    "contact_id": 12524074,
-    "name": "Mariann Barrows",
     "messages": [
       {
         "owner": false,
@@ -769,8 +721,6 @@
   },
   {
     "id": "8854b661e79c08fa27276664ba733df876e34d2f",
-    "contact_id": 12524124,
-    "name": "Lorri Skingle",
     "messages": [
       {
         "owner": false,
@@ -816,8 +766,6 @@
   },
   {
     "id": "495b2df6c96b9e89ec97dbb9bd3395e53859654b",
-    "contact_id": 12524125,
-    "name": "Maia Connell",
     "messages": [
       {
         "owner": false,
@@ -863,8 +811,6 @@
   },
   {
     "id": "cc7d9120320fbac3df4a4003eb04c70bd2f80c90",
-    "contact_id": 12524126,
-    "name": "Shaun Partener",
     "messages": [
       {
         "owner": false,
@@ -890,8 +836,6 @@
   },
   {
     "id": "50c7046afecd458b1dcf43e1a96c0b88f7d2fe4d",
-    "contact_id": 12524174,
-    "name": "Maurits Domerq",
     "messages": [
       {
         "owner": false,
@@ -967,8 +911,6 @@
   },
   {
     "id": "e79beaf320d8cb549ada2f10b58ee26372f71f1a",
-    "contact_id": 12524175,
-    "name": "Ulrika Flade",
     "messages": [
       {
         "owner": false,
@@ -999,8 +941,6 @@
   },
   {
     "id": "2cc5de568462f2d9a141517949dce093a0fcb5b5",
-    "contact_id": 12524176,
-    "name": "Gardner Fairpool",
     "messages": [
       {
         "owner": false,
@@ -1021,8 +961,6 @@
   },
   {
     "id": "b781811135269394b3ca54b3999d835d534d454a",
-    "contact_id": 12524177,
-    "name": "Fletch Sparway",
     "messages": [
       {
         "owner": false,
@@ -1048,8 +986,6 @@
   },
   {
     "id": "f88fc31421941aad3be618775234489483c6cd31",
-    "contact_id": 12524178,
-    "name": "Jaimie Salsberg",
     "messages": [
       {
         "owner": false,
@@ -1125,8 +1061,6 @@
   },
   {
     "id": "d84b2b34b0e054abc29132a2be4acfbe966a5375",
-    "contact_id": 12524179,
-    "name": "Pall Blamey",
     "messages": [
       {
         "owner": false,
@@ -1152,8 +1086,6 @@
   },
   {
     "id": "d132e2061e0bb895f2ec9527f70b0cde63bfb539",
-    "contact_id": 12524180,
-    "name": "Link Bonelle",
     "messages": [
       {
         "owner": false,
@@ -1174,8 +1106,6 @@
   },
   {
     "id": "6b638aa2b19c13b9f6aa16999c151f7d7a45460c",
-    "contact_id": 12524181,
-    "name": "Ingamar Sate",
     "messages": [
       {
         "owner": false,
@@ -1236,8 +1166,6 @@
   },
   {
     "id": "9f69d8da167486e3413f162db883125b4d23be0f",
-    "contact_id": 12524224,
-    "name": "Riki Rocco",
     "messages": [
       {
         "owner": false,
@@ -1283,8 +1211,6 @@
   },
   {
     "id": "c5e6f6e00c6f4682a69022dc1345d681cf5b1013",
-    "contact_id": 12524274,
-    "name": "Chancey Learie",
     "messages": [
       {
         "owner": false,
@@ -1420,8 +1346,6 @@
   },
   {
     "id": "ceab195b8f4cc03c6d5be128a3c8720adec1a609",
-    "contact_id": 12524275,
-    "name": "Pennie Fassbindler",
     "messages": [
       {
         "owner": false,
@@ -1452,8 +1376,6 @@
   },
   {
     "id": "9e815ca260a89bfbd68a63cd421b10ff4619975d",
-    "contact_id": 12524276,
-    "name": "Loutitia Landa",
     "messages": [
       {
         "owner": false,
@@ -1469,8 +1391,6 @@
   },
   {
     "id": "59ce5957d6b88c2b4846783bddfe788521b6afd6",
-    "contact_id": 12524324,
-    "name": "Clarisse Petters",
     "messages": [
       {
         "owner": false,
@@ -1541,8 +1461,6 @@
   },
   {
     "id": "74dd8bc30d14014b934b239ea70b133c929f235d",
-    "contact_id": 12524374,
-    "name": "Aksel Baden",
     "messages": [
       {
         "owner": false,
@@ -1588,8 +1506,6 @@
   },
   {
     "id": "cd1b6d916a78ae48271a65999ffe2ba1fe9e1803",
-    "contact_id": 12524375,
-    "name": "Jule Iacopo",
     "messages": [
       {
         "owner": false,
@@ -1615,8 +1531,6 @@
   },
   {
     "id": "42d3bd6d1ffbcbc5326348671f10648ecd5077a0",
-    "contact_id": 12524376,
-    "name": "Katie Thaxton",
     "messages": [
       {
         "owner": false,
@@ -1752,8 +1666,6 @@
   },
   {
     "id": "4cd01c2b74530c5354047832b36338fb4bcb7ef2",
-    "contact_id": 12524377,
-    "name": "Rebecca Sherrell",
     "messages": [
       {
         "owner": false,
@@ -1779,8 +1691,6 @@
   },
   {
     "id": "b1e577292e15888593e4c5cf2eb4e6c76542b6bd",
-    "contact_id": 12524424,
-    "name": "Kendra Shannahan",
     "messages": [
       {
         "owner": false,
@@ -1841,8 +1751,6 @@
   },
   {
     "id": "3e6f6ff7a30c3ba5eb4f8894d80c625048007c4f",
-    "contact_id": 12524474,
-    "name": "Rachelle Patullo",
     "messages": [
       {
         "owner": false,
@@ -1978,8 +1886,6 @@
   },
   {
     "id": "f8dce659e6a1e98d554e8d40a30550f96f68849c",
-    "contact_id": 12524524,
-    "name": "Sheba Giabucci",
     "messages": [
       {
         "owner": false,
@@ -2000,8 +1906,6 @@
   },
   {
     "id": "a4a033b4edcd4b29d2c5c17c63cef7f3a28187e3",
-    "contact_id": 12524574,
-    "name": "Amalia Whitehead",
     "messages": [
       {
         "owner": false,
@@ -2072,8 +1976,6 @@
   },
   {
     "id": "80fa7b3ab75edad2590e0e8aa943c853ebd2bcba",
-    "contact_id": 12524624,
-    "name": "Alejandra Clilverd",
     "messages": [
       {
         "owner": false,
@@ -2094,8 +1996,6 @@
   },
   {
     "id": "6e3b95bf0e967ee7ee0c15d283c5236c3ec2901c",
-    "contact_id": 12524625,
-    "name": "Eli Sherwill",
     "messages": [
       {
         "owner": false,
@@ -2126,8 +2026,6 @@
   },
   {
     "id": "c07602bee7c75c4b4ecabfbc6b6ce84738ed2689",
-    "contact_id": 12524674,
-    "name": "Krista O'Cahsedy",
     "messages": [
       {
         "owner": false,
@@ -2198,8 +2096,6 @@
   },
   {
     "id": "f5af554279af0a55742d48cc9c8610c83c7628f5",
-    "contact_id": 12524724,
-    "name": "Florida Eagell",
     "messages": [
       {
         "owner": false,
@@ -2230,8 +2126,6 @@
   },
   {
     "id": "b2bf151f8f345932efad1472f9d4d888b0533f06",
-    "contact_id": 12524725,
-    "name": "Boycie Figura",
     "messages": [
       {
         "owner": false,
@@ -2262,8 +2156,6 @@
   },
   {
     "id": "27de848974201b28f3c5305ab379a5aa7710cb8f",
-    "contact_id": 12524726,
-    "name": "Charisse Maceur",
     "messages": [
       {
         "owner": false,
@@ -2284,8 +2176,6 @@
   },
   {
     "id": "94df78dca076bb1d57185e6c4eda5e7100bbe76a",
-    "contact_id": 12524727,
-    "name": "Mikel Spencook",
     "messages": [
       {
         "owner": false,
@@ -2331,8 +2221,6 @@
   },
   {
     "id": "b4169e022a3456df0bea9f4c23a3572f0ada0f4e",
-    "contact_id": 12524774,
-    "name": "Olimpia Ferruzzi",
     "messages": [
       {
         "owner": false,
@@ -2408,8 +2296,6 @@
   },
   {
     "id": "b9cfd44e8f9cce1a95199882f04dc34de7369b22",
-    "contact_id": 12524775,
-    "name": "Miller Lomas",
     "messages": [
       {
         "owner": false,
@@ -2440,8 +2326,6 @@
   },
   {
     "id": "b1d6779376300ecc5c5eba42905ba608f9081caa",
-    "contact_id": 12524776,
-    "name": "Fan Oxx",
     "messages": [
       {
         "owner": false,
@@ -2517,8 +2401,6 @@
   },
   {
     "id": "1d03f5f92e724764e185fbfd4b66ddd8c4140ea2",
-    "contact_id": 12524824,
-    "name": "Martino Czajkowski",
     "messages": [
       {
         "owner": false,
@@ -2589,8 +2471,6 @@
   },
   {
     "id": "437cdcb63c413238211aea392726b9bd55e5b8c8",
-    "contact_id": 12524825,
-    "name": "Hunt Stolze",
     "messages": [
       {
         "owner": false,
@@ -2616,8 +2496,6 @@
   },
   {
     "id": "77fe7d9ef84c06c921e2fdb01e546751a501b232",
-    "contact_id": 12524826,
-    "name": "Shel Hestrop",
     "messages": [
       {
         "owner": false,
@@ -2663,8 +2541,6 @@
   },
   {
     "id": "91cab7ba0e15dd483f3c50e7ff4ae41f7682391a",
-    "contact_id": 12524874,
-    "name": "Jessie MacTavish",
     "messages": [
       {
         "owner": false,
@@ -2690,8 +2566,6 @@
   },
   {
     "id": "eeff5737e2a5f2c211401de74ae0c1c1fc707b1e",
-    "contact_id": 12524924,
-    "name": "Vere Oxshott",
     "messages": [
       {
         "owner": false,
@@ -2717,8 +2591,6 @@
   },
   {
     "id": "ee7af6ac89c819dfd84ca430fa2bf2066d117b2f",
-    "contact_id": 12524925,
-    "name": "Tammie Polglase",
     "messages": [
       {
         "owner": false,
@@ -2744,8 +2616,6 @@
   },
   {
     "id": "7afc04231ea848b042a395a0e6f547f004bf8cfb",
-    "contact_id": 12524974,
-    "name": "Vladamir China",
     "messages": [
       {
         "owner": false,
@@ -2816,8 +2686,6 @@
   },
   {
     "id": "d52851dd5367101ee2b9899fb5c13e2ebae3950b",
-    "contact_id": 12525024,
-    "name": "Vincents Sheraton",
     "messages": [
       {
         "owner": false,
@@ -2888,8 +2756,6 @@
   },
   {
     "id": "7f6d997733e1207211f2a315f48bcf7c01fc365d",
-    "contact_id": 12525074,
-    "name": "Marven Janz",
     "messages": [
       {
         "owner": false,
@@ -2905,8 +2771,6 @@
   },
   {
     "id": "a4966be728ae01f57631da42beb99233ccea5564",
-    "contact_id": 12525124,
-    "name": "Luce Simchenko",
     "messages": [
       {
         "owner": false,
@@ -2977,8 +2841,6 @@
   },
   {
     "id": "21000d683c5bc68c5d90bd054e1ed7daa7c763c2",
-    "contact_id": 12525174,
-    "name": "Karalee Meece",
     "messages": [
       {
         "owner": false,
@@ -3004,8 +2866,6 @@
   },
   {
     "id": "6e5a002c797563273d310d8fce79f57761952382",
-    "contact_id": 12525224,
-    "name": "Luis Babbidge",
     "messages": [
       {
         "owner": false,
@@ -3031,8 +2891,6 @@
   },
   {
     "id": "0bbef6c64b638eabfd6dda12ea40d25607ea8e77",
-    "contact_id": 12525274,
-    "name": "Jeddy Gurnell",
     "messages": [
       {
         "owner": false,
@@ -3053,8 +2911,6 @@
   },
   {
     "id": "3529d6055333f7ee8d65a2baca1287a52475c317",
-    "contact_id": 12525324,
-    "name": "Cathyleen Trunchion",
     "messages": [
       {
         "owner": false,
@@ -3115,8 +2971,6 @@
   },
   {
     "id": "a8d539a706568b16ef242db1bdfe20b162417696",
-    "contact_id": 12525325,
-    "name": "Reagan Gaine of England",
     "messages": [
       {
         "owner": false,
@@ -3187,8 +3041,6 @@
   },
   {
     "id": "9915b6369c2af872dbb78362349ce3492c8be153",
-    "contact_id": 12525326,
-    "name": "Jillie Aland",
     "messages": [
       {
         "owner": false,
@@ -3234,8 +3086,6 @@
   },
   {
     "id": "cf415c6bb91b413c0edf699ba24f9f43e143fb43",
-    "contact_id": 12525374,
-    "name": "Myranda Vasilchikov",
     "messages": [
       {
         "owner": false,
@@ -3251,8 +3101,6 @@
   },
   {
     "id": "795b17a73005b2d0aa2a990ba39250dbafbc68c8",
-    "contact_id": 12525375,
-    "name": "Standford Rieger",
     "messages": [
       {
         "owner": false,
@@ -3298,8 +3146,6 @@
   },
   {
     "id": "7ae4474713daa37fb80914d320fded75aac78393",
-    "contact_id": 12525376,
-    "name": "Lola Middler",
     "messages": [
       {
         "owner": false,
@@ -3370,8 +3216,6 @@
   },
   {
     "id": "a4a4856b8d32e4c2baed86d4fc31f96827441b2b",
-    "contact_id": 12525424,
-    "name": "Leena MacArthur",
     "messages": [
       {
         "owner": false,
@@ -3507,8 +3351,6 @@
   },
   {
     "id": "d95f3f3667b70bbd51b29869dbe19ec14506b2c1",
-    "contact_id": 12525474,
-    "name": "Silvester Leyrroyd",
     "messages": [
       {
         "owner": false,
@@ -3644,8 +3486,6 @@
   },
   {
     "id": "3e9387287afea8f252516c1723b7f67d2f8b0f8a",
-    "contact_id": 12525524,
-    "name": "Tomasine Dovidian",
     "messages": [
       {
         "owner": false,
@@ -3706,8 +3546,6 @@
   },
   {
     "id": "2e14328a99b5f11f8ac1c9a4a17918271160bc60",
-    "contact_id": 12525574,
-    "name": "Jinny Dodsworth",
     "messages": [
       {
         "owner": false,
@@ -3733,8 +3571,6 @@
   },
   {
     "id": "c434447c6fb5136c47416b44a576110330e6c67a",
-    "contact_id": 12525624,
-    "name": "Bambi Blow",
     "messages": [
       {
         "owner": false,
@@ -3760,8 +3596,6 @@
   },
   {
     "id": "10a9b0dc1e0a639f1d234f35813f896815320624",
-    "contact_id": 12525625,
-    "name": "Marian Landsbury",
     "messages": [
       {
         "owner": false,
@@ -3787,8 +3621,6 @@
   },
   {
     "id": "5450b17b31e5fd4dc2b9eabfd06f892d4f7996ee",
-    "contact_id": 12525626,
-    "name": "Jacqui Barstowk",
     "messages": [
       {
         "owner": false,
@@ -3849,8 +3681,6 @@
   },
   {
     "id": "cdccdc4a4b8a6e16c3b714426ea83bb4bf247cd9",
-    "contact_id": 12525627,
-    "name": "Oralee Terrey",
     "messages": [
       {
         "owner": false,
@@ -3911,8 +3741,6 @@
   },
   {
     "id": "d274fa6e5125712821a96a0066d6b97134ac842d",
-    "contact_id": 12525674,
-    "name": "Ulrick Oakenfall",
     "messages": [
       {
         "owner": false,
@@ -3938,8 +3766,6 @@
   },
   {
     "id": "5ec60022610ee3d8734ab5bc87a6c821476c7972",
-    "contact_id": 12525724,
-    "name": "Grenville Hayers",
     "messages": [
       {
         "owner": false,
@@ -3985,8 +3811,6 @@
   },
   {
     "id": "5b18985a13e9e7b4d6f2c3ce9e3ab2a94491f590",
-    "contact_id": 12525725,
-    "name": "Sayer Pevreal",
     "messages": [
       {
         "owner": false,
@@ -4032,8 +3856,6 @@
   },
   {
     "id": "94e6d56ddd0e5b43905518011189d5ceeaf2c625",
-    "contact_id": 12525774,
-    "name": "Sawyere Trusse",
     "messages": [
       {
         "owner": false,
@@ -4059,8 +3881,6 @@
   },
   {
     "id": "41cb744734cb9994444255e266a3bf28edc469c3",
-    "contact_id": 12525775,
-    "name": "Dominic Asbery",
     "messages": [
       {
         "owner": false,
@@ -4076,8 +3896,6 @@
   },
   {
     "id": "cb567c6b22c6e030d298746a96caf4261a4636c2",
-    "contact_id": 12525776,
-    "name": "Benjamin Cheverton",
     "messages": [
       {
         "owner": false,
@@ -4108,8 +3926,6 @@
   },
   {
     "id": "8a64c31514e232d136e9d4de0e60d7734246c6e4",
-    "contact_id": 12525824,
-    "name": "Kellsie Caslin",
     "messages": [
       {
         "owner": false,
@@ -4125,8 +3941,6 @@
   },
   {
     "id": "7e04216625115f98914daf4d87c18fd9729adf27",
-    "contact_id": 12525825,
-    "name": "Elliot Pinkett",
     "messages": [
       {
         "owner": false,
@@ -4157,8 +3971,6 @@
   },
   {
     "id": "63547d96af8088944aaf0e0ea3731aa75b19a934",
-    "contact_id": 12525874,
-    "name": "Timmie Kidstoun",
     "messages": [
       {
         "owner": false,
@@ -4234,8 +4046,6 @@
   },
   {
     "id": "6d752874b4a595fe2d6ae0b74c4410e818c572d3",
-    "contact_id": 12525924,
-    "name": "Andromache Haythornthwaite",
     "messages": [
       {
         "owner": false,
@@ -4261,8 +4071,6 @@
   },
   {
     "id": "2b896de9f8386509633a957b67ff3d4f304da243",
-    "contact_id": 12525925,
-    "name": "Elias Gredden",
     "messages": [
       {
         "owner": false,
@@ -4283,8 +4091,6 @@
   },
   {
     "id": "917f776178a6ccd2838f3101c41ec389bdf7c55c",
-    "contact_id": 12525974,
-    "name": "Sky Joice",
     "messages": [
       {
         "owner": false,
@@ -4300,8 +4106,6 @@
   },
   {
     "id": "2cdbc50a1ee3262bba9bb035186571e5e53e050d",
-    "contact_id": 12526024,
-    "name": "Juana Seller",
     "messages": [
       {
         "owner": false,
@@ -4362,8 +4166,6 @@
   },
   {
     "id": "4e94e2645b5fc52b29b2db752b1bc16b2ce96dc9",
-    "contact_id": 12526074,
-    "name": "Pietrek Boyse",
     "messages": [
       {
         "owner": false,
@@ -4389,8 +4191,6 @@
   },
   {
     "id": "649145c814e19039cf318bb8cf7be7c8bfc87e55",
-    "contact_id": 12526124,
-    "name": "Phebe Winyard",
     "messages": [
       {
         "owner": false,
