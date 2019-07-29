@@ -12,7 +12,7 @@ export default function Conversation({ data = {} }) {
   const [isLoading, setIsLoading] = useState(false);
   const classes = useStyle();
 
-  const newMessage = (content) => {
+  function newMessage(content) {
     return { owner: true, time: new Date(), content }
   }
 
@@ -108,6 +108,6 @@ const useStyle = makeStyles(theme => ({
   },
   loader: {
     marginLeft: '49%',
-    marginTop: '25%'
+    marginTop: '25%',
   }
 }))

@@ -12,7 +12,7 @@ import menusDB from '../../storage/menus.json'
 
 const Header = ({ history }) => {
   const [menus] = useState(menusDB)
-  const [indexTab, setIndexTab] = useState(2)
+  const [indexTab, setIndexTab] = useState(1)
   const classes = useStyles();
 
   useEffect(() => {

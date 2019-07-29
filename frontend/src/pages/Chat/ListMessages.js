@@ -9,7 +9,7 @@ export default function ListMessages({ data = [], onSelect }) {
   const [isLoading, setIsLoading] = useState(false);
   const classes = useStyles();
 
-  const handleSelect = (selected) => {
+  function handleSelect(selected) {
     data = data.map(item => item.id === selected.id ? ({ ...item, selected: true }) : item)
 
     if (onSelect)
@@ -126,7 +126,7 @@ const useStyles = makeStyles(theme => ({
   },
   loader: {
     marginLeft: '49%',
-    marginTop: '50%'
+    marginTop: '50%',
   },
   '@global': {
     '*::-webkit-scrollbar': {

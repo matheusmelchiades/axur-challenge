@@ -6,5 +6,9 @@
   {
     "label": "CONTACTS",
     "path": "/contacts"
+  },
+  {
+    "label": "DOMAINS",
+    "path": "/domains"
   }
 ]

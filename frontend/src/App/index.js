@@ -8,6 +8,7 @@ import { Route, Redirect } from 'react-router-dom';
 import Header from '../components/Header';
 import Contacts from '../pages/Contacts/index';
 import Chat from '../pages/Chat';
+import Domains from '../pages/Domains';
 
 const App = () => {
   const classes = useStyles();
@@ -17,9 +18,10 @@ const App = () => {
       <CssBaseline />
       <div className={classes.root}>
         <Header />
-        <Route path="/contacts" component={Contacts} />
         <Route path="/messages" component={Chat} />
-        <Redirect from="*" to="messages" />
+        <Route path="/contacts" component={Contacts} />
+        <Route path="/domains" component={Domains} />
+        <Redirect from="*" to="domains" />
       </div>
     </MuiThemeProvider>
   );

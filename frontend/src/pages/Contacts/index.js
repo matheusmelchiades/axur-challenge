@@ -132,7 +132,9 @@ const useStyles = makeStyles(theme => ({
     margin: '5%'
   },
   loader: {
-
+    marginLeft: '49%',
+    marginTop: '20%',
+    color: palette.colors.orange
   }
 }))
 
