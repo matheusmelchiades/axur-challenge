@@ -17,7 +17,7 @@ export default function Domains() {
 
   async function fetchData() {
     try {
-      const { data } = await api.get('contacts/domain');
+      const { data } = await api.get('contacts/domains');
 
       if (!data.length)
         return [];
