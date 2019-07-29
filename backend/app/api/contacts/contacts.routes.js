@@ -8,7 +8,7 @@ const routes = [
     },
     {
         'method': 'GET',
-        'path': '/contacts/domain',
+        'path': '/contacts/domains',
         'handler': handler.getDomains
     }
 ];
