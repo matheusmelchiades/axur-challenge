@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {
-  Paper, makeStyles, Avatar, Divider, Typography
+  Paper, makeStyles, Avatar, Divider, Typography, CircularProgress
 } from '@material-ui/core';
 import { palette } from '../../config/GlobalStyle';
 import moment from 'moment';
 
 export default function ListMessages({ data = [], onSelect }) {
+  const [isLoading, setIsLoading] = useState(false);
   const classes = useStyles();
 
   const handleSelect = (selected) => {
@@ -15,48 +16,56 @@ export default function ListMessages({ data = [], onSelect }) {
       onSelect(selected)
   }
 
+  useEffect(() => {
+    if (data.length)
+      setIsLoading(true)
+  }, [data])
+
   return (
     <Paper className={classes.root} elevation={4}>
       {
-        data.map((message, index) => {
-          const classSelect = message.selected ? classes.selected : '';
+        !isLoading ?
+          <CircularProgress className={classes.loader} />
+          :
+          data.map((message, index) => {
+            const classSelect = message.selected ? classes.selected : '';
 
-          return (
-            <div key={message.id} className={`${classes.containerMessage} ${classSelect}`}
-              onClick={() => handleSelect(message)}>
-              <div className={classes.content}>
+            return (
+              <div key={message.id} className={`${classes.containerMessage} ${classSelect}`}
+                onClick={() => handleSelect(message)}>
+                <div className={classes.content}>
 
-                <Avatar className={classes.avatar}
-                  src={message.avatar.urlMedium} />
+                  <Avatar className={classes.avatar}
+                    src={message.avatar.urlMedium} />
 
-                <div className={classes.contentData}>
-                  <div className={classes.contentName} >
-                    <Typography variant="h5" component="h2">
-                      {message.firstname} {message.lastname}
+                  <div className={classes.contentData}>
+                    <div className={classes.contentName} >
+                      <Typography variant="h5" component="h2">
+                        {message.firstname} {message.lastname}
+                      </Typography>
+                    </div>
+
+                    <div className={classes.contentText}>
+                      <Typography color="textSecondary" gutterBottom>
+                        {message.content.slice(0, 40)}...
                     </Typography>
+                    </div>
                   </div>
 
-                  <div className={classes.contentText}>
+                  <div className={classes.time}>
                     <Typography color="textSecondary" gutterBottom>
-                      {message.content.slice(0, 40)}...
+                      {moment(message.time).format('h:mm')}
                     </Typography>
                   </div>
                 </div>
 
-                <div className={classes.time}>
-                  <Typography color="textSecondary" gutterBottom>
-                    {moment(message.time).format('h:mm')}
-                  </Typography>
-                </div>
+                {
+                  index < (data.length - 1) &&
+                  <Divider className={classes.divider} />
+                }
               </div>
-
-              {
-                index < (data.length - 1) &&
-                <Divider className={classes.divider} />
-              }
-            </div>
-          )
-        })
+            )
+          })
       }
     </Paper>
   );
@@ -114,6 +123,10 @@ const useStyles = makeStyles(theme => ({
     width: '75%',
     backgroundColor: palette.colors.purpleDark,
     opacity: 10
+  },
+  loader: {
+    marginLeft: '49%',
+    marginTop: '50%'
   },
   '@global': {
     '*::-webkit-scrollbar': {

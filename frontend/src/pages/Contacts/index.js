@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { palette } from '../../config/GlobalStyle';
 import {
   Container, Card, Grid, CardContent,
-  IconButton, Avatar, makeStyles, Divider, Typography
+  IconButton, Avatar, makeStyles, Divider, Typography, CircularProgress
 } from '@material-ui/core';
 import {
   Call, Email, Forum as Chat, MoreHoriz,
@@ -12,6 +12,7 @@ import api from '../../services/api';
 
 const Contacts = ({ history }) => {
   const [data, setData] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
   const classes = useStyles();
 
   useEffect(() => {
@@ -23,6 +24,7 @@ const Contacts = ({ history }) => {
         const vinculated = vinculateMedia(response.data);
 
         setData(vinculated);
+        setIsLoading(true)
       }
     }
 
@@ -33,47 +35,50 @@ const Contacts = ({ history }) => {
     <Container className={classes.root}>
       <Grid container spacing={4}>
         {
-          data.map((contact, index) => (
-            <Grid key={index} item xs={6} sm={3} >
-              <Card className={classes.card}>
+          !isLoading ?
+            <CircularProgress className={classes.loader} />
+            :
+            data.map((contact, index) => (
+              <Grid key={index} item xs={6} sm={3} >
+                <Card className={classes.card}>
 
-                <div className={classes.cardHeader}>
-                  <IconButton>
-                    <MoreHoriz className={classes.colorCard} />
-                  </IconButton>
-                </div>
+                  <div className={classes.cardHeader}>
+                    <IconButton>
+                      <MoreHoriz className={classes.colorCard} />
+                    </IconButton>
+                  </div>
 
-                <CardContent className={classes.cardContent}>
-                  <Avatar className={classes.cardAvatar}
-                    src={contact.avatar ? contact.avatar.urlLarge : ''} />
+                  <CardContent className={classes.cardContent}>
+                    <Avatar className={classes.cardAvatar}
+                      src={contact.avatar ? contact.avatar.urlLarge : ''} />
 
-                  <Typography className={classes.name} variant="h6">
-                    {contact.firstname} {contact.lastname}
-                  </Typography>
+                    <Typography className={classes.name} variant="h6">
+                      {contact.firstname} {contact.lastname}
+                    </Typography>
 
-                  <Typography className={classes.email} variant="subtitle1">
-                    {contact.email}
-                  </Typography>
-                </CardContent>
+                    <Typography className={classes.email} variant="subtitle1">
+                      {contact.email}
+                    </Typography>
+                  </CardContent>
 
-                <Divider className={classes.divider} />
+                  <Divider className={classes.divider} />
 
-                <div className={classes.contentActions}>
-                  <IconButton className={classes.icons}>
-                    <Call className={classes.colorCard} />
-                  </IconButton>
-                  <IconButton className={classes.icons}>
-                    <Email className={classes.colorCard} />
-                  </IconButton>
-                  <IconButton className={classes.icons}
-                    onClick={() => history.push('/messages', { contact })}>
-                    <Chat className={classes.colorCard} />
-                  </IconButton>
-                </div>
+                  <div className={classes.contentActions}>
+                    <IconButton className={classes.icons}>
+                      <Call className={classes.colorCard} />
+                    </IconButton>
+                    <IconButton className={classes.icons}>
+                      <Email className={classes.colorCard} />
+                    </IconButton>
+                    <IconButton className={classes.icons}
+                      onClick={() => history.push('/messages', { contact })}>
+                      <Chat className={classes.colorCard} />
+                    </IconButton>
+                  </div>
 
-              </Card>
-            </Grid>
-          ))
+                </Card>
+              </Grid>
+            ))
         }
       </Grid>
     </Container>
@@ -125,6 +130,9 @@ const useStyles = makeStyles(theme => ({
   },
   icons: {
     margin: '5%'
+  },
+  loader: {
+
   }
 }))
 

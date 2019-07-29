@@ -1,16 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import {
   Paper, makeStyles, Avatar, Typography,
+  CircularProgress
 } from '@material-ui/core';
 import { palette } from '../../config/GlobalStyle';
-import { vinculateDataByIndex } from '../../helper/data';
-import mediaData from '../../storage/media.json';
 import Input from '../../components/Inputs/SendMessage';
 import moment from 'moment';
 
-
 export default function Conversation({ data = {} }) {
   const [messages, setMessages] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
   const classes = useStyle();
 
   const newMessage = (content) => {
@@ -24,37 +23,42 @@ export default function Conversation({ data = {} }) {
       return;
 
     setMessages(data.messages)
+    setIsLoading(true)
   }, [data])
 
   return (
     <Paper className={classes.conversationContainer} elevation={4}>
+
       <div className={classes.messagesContent}>
 
-        {/* MESSAGES */}
         {
-          messages.map((message, index) => (
-            <div key={index} className={classes.messageContainer}>
-              <div className={classes.avatarContent}>
-                {
-                  !message.owner &&
-                  <Avatar className={classes.avatar} src={data.avatar.urlMedium} />
-                }
-                {
-                  !message.owner &&
-                  <Typography className={classes.time} color="textSecondary" gutterBottom>
-                    {moment(message.time).format('h:mm')}
-                  </Typography>
-                }
-              </div>
+          !isLoading ?
+            <CircularProgress className={classes.loader} />
+            :
+            messages.map((message, index) => (
+              <div key={index} className={classes.messageContainer}>
+                <div className={classes.avatarContent}>
+                  {
+                    !message.owner &&
+                    <Avatar className={classes.avatar} src={data.avatar.urlMedium} />
+                  }
+                  {
+                    !message.owner &&
+                    <Typography className={classes.time} color="textSecondary" gutterBottom>
+                      {moment(message.time).format('h:mm')}
+                    </Typography>
+                  }
+                </div>
 
-              <Paper className={`${classes.message} ${message.owner ? classes.styleOwner : ''}`} elevation={4}>
-                <Typography color="textSecondary" gutterBottom>
-                  {message.content}
-                </Typography>
-              </Paper>
-            </div>
-          ))
+                <Paper className={`${classes.message} ${message.owner ? classes.styleOwner : ''}`} elevation={4}>
+                  <Typography color="textSecondary" gutterBottom>
+                    {message.content}
+                  </Typography>
+                </Paper>
+              </div>
+            ))
         }
+
       </div>
       <Input onSend={value => setMessages([...messages, newMessage(value)])} />
     </Paper>
@@ -74,7 +78,9 @@ const useStyle = makeStyles(theme => ({
   },
   messagesContent: {
     height: '100%',
-    overflow: 'auto'
+    overflow: 'auto',
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   messageContainer: {
     display: 'flex',
@@ -99,5 +105,9 @@ const useStyle = makeStyles(theme => ({
   styleOwner: {
     marginLeft: '40%',
     backgroundColor: palette.colors.orange
+  },
+  loader: {
+    marginLeft: '49%',
+    marginTop: '25%'
   }
 }))
