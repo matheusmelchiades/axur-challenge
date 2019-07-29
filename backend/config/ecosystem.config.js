@@ -13,8 +13,7 @@ module.exports = {
             'apiKeyField': 'hapikey',
             'apiKeyValue': 'demo',
             'ratelimit': 100,
-            'listName': `test.${new Date().getTime()}`
-            // 'listName': `matheus.maciel.${new Date().getTime()}`
+            'listName': `matheus.maciel.${new Date().getTime()}`
         }
     },
 };
